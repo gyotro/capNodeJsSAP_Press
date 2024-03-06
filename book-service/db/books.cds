@@ -25,3 +25,7 @@ type Rating : Integer enum {
 }
 
 
+entity Reviews : cuid, managed {
+    rating: Rating;
+    subject: UUID;    
+}
